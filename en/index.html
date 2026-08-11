@@ -247,7 +247,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
     <h1>Privacy Policy</h1>
     <p>How Strimo handles your privacy and data</p>
     <div class="hpbar" aria-hidden="true"><i></i></div>
-    <div class="badge">Last updated: June 16, 2026 ・ Version 1.1</div>
+    <div class="badge">Last updated: August 12, 2026 ・ Version 1.2</div>
   </div>
 </header>
 
@@ -295,7 +295,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
       <div class="card">
         <div class="card-icon">👟</div>
         <h3>HealthKit data</h3>
-        <p>Step, sleep, and workout data. Steps earn Step Points, sleep aids monster recovery, and workouts grant bonuses. Use requires your explicit permission.</p>
+        <p>Step, sleep, and workout data. Steps earn Step Points, sleep aids monster recovery, and workouts grant bonuses. Use requires your explicit permission. Of these, <strong>only your step count is stored on our servers and used for rankings</strong> (<a href="#how-we-handle-healthkit-data">details</a>).</p>
       </div>
       <div class="card">
         <div class="card-icon">📍</div>
@@ -323,6 +323,46 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
         <li>HealthKit data is <strong>never shared with or sold to third parties</strong>.</li>
         <li>HealthKit data is not backed up to iCloud.</li>
       </ul>
+    </div>
+
+    <h3>What leaves your device, and what does not</h3>
+    <table>
+      <thead><tr><th>Data</th><th>Sent to</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Step count<br>(daily total)</td>
+          <td>Our server<br>(Supabase)</td>
+          <td>Syncing across devices,<br>totalling rankings</td>
+        </tr>
+        <tr>
+          <td>Sleep duration</td>
+          <td><strong>Not sent</strong><br>(stays on device)</td>
+          <td>Monster recovery</td>
+        </tr>
+        <tr>
+          <td>Workouts</td>
+          <td><strong>Not sent</strong><br>(stays on device)</td>
+          <td>Determining bonuses</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Step counts are sent <strong>only while you are signed in</strong>. If you play as a guest
+      without signing in, all of your data — including your steps — stays on your device.
+    </p>
+
+    <div class="important">
+      <strong>Rankings show your step count to other players</strong>
+      <p>
+        If you appear in the weekly or monthly rankings, your <strong>display name and step total
+        for that period</strong> are visible to other players. Only the top 100 players by step
+        count are listed, and your sleep and workout data is never visible to anyone else.
+        Rankings can only be viewed by signed-in players.
+      </p>
+      <p>
+        If you would rather not appear, sign out and play as a guest. Deleting your account also
+        deletes the step records held on our server.
+      </p>
     </div>
   </section>
 

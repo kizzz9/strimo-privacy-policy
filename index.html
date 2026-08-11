@@ -247,7 +247,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
     <h1>プライバシーポリシー</h1>
     <p>Strimo におけるプライバシーとデータの取り扱いについて</p>
     <div class="hpbar" aria-hidden="true"><i></i></div>
-    <div class="badge">最終更新日: 2026年6月16日 ・ バージョン 1.1</div>
+    <div class="badge">最終更新日: 2026年8月12日 ・ バージョン 1.2</div>
   </div>
 </header>
 
@@ -295,7 +295,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
       <div class="card">
         <div class="card-icon">👟</div>
         <h3>HealthKit データ</h3>
-        <p>歩数・睡眠・ワークアウトのデータ。歩数はステップポイント獲得、睡眠はモンスター回復、ワークアウトはボーナスに使用します。利用には明示的な許可が必要です。</p>
+        <p>歩数・睡眠・ワークアウトのデータ。歩数はステップポイント獲得、睡眠はモンスター回復、ワークアウトはボーナスに使用します。利用には明示的な許可が必要です。このうち<strong>歩数だけはサーバーに保存され、ランキングに使われます</strong>（<a href="#healthkit">詳細</a>）。</p>
       </div>
       <div class="card">
         <div class="card-icon">📍</div>
@@ -323,6 +323,46 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
         <li>HealthKit データは<strong>第三者に提供・販売しません</strong>。</li>
         <li>HealthKit データは iCloud にバックアップされません。</li>
       </ul>
+    </div>
+
+    <h3>端末の外に出るもの・出ないもの</h3>
+    <table>
+      <thead><tr><th>データ</th><th>送信先</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>歩数<br>（日ごとの合計）</td>
+          <td>当社サーバー<br>（Supabase）</td>
+          <td>端末間の同期、<br>ランキングの集計</td>
+        </tr>
+        <tr>
+          <td>睡眠時間</td>
+          <td><strong>送信しません</strong><br>（端末内のみ）</td>
+          <td>モンスターの回復量</td>
+        </tr>
+        <tr>
+          <td>ワークアウト</td>
+          <td><strong>送信しません</strong><br>（端末内のみ）</td>
+          <td>ボーナスの判定</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      歩数の送信は<strong>サインインしている場合のみ</strong>行われます。サインインせずゲストとして
+      プレイしている間は、歩数を含むすべてのデータが端末内にとどまります。
+    </p>
+
+    <div class="important">
+      <strong>ランキングでは歩数が他のユーザーに見えます</strong>
+      <p>
+        週間・月間ランキングに掲載されると、<strong>表示名とその期間の合計歩数</strong>が
+        他のユーザーに表示されます。掲載されるのは歩数の多い上位 100 名までで、
+        睡眠・ワークアウトのデータが他のユーザーに見えることはありません。
+        ランキングを見られるのはサインイン済みのユーザーだけです。
+      </p>
+      <p>
+        ランキングに載せたくない場合は、サインアウトしてゲストとしてプレイしてください。
+        アカウントを削除すると、サーバー上の歩数記録もあわせて削除されます。
+      </p>
     </div>
   </section>
 
