@@ -247,7 +247,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
     <h1>Privacy Policy</h1>
     <p>How Strimo handles your privacy and data</p>
     <div class="hpbar" aria-hidden="true"><i></i></div>
-    <div class="badge">Last updated: November 18, 2026 ・ Version 1.5</div>
+    <div class="badge">Last updated: November 19, 2026 ・ Version 1.6</div>
   </div>
 </header>
 
@@ -429,6 +429,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
       <tr><td>Support requests</td><td>Kept as a record of our replies (in-app requests are deleted when you delete your account; contact us to delete web requests)</td></tr>
       <tr><td>Reports and moderation records</td><td>Kept to prevent abuse</td></tr>
       <tr><td>Announcement and gift claim records</td><td>Until account deletion</td></tr>
+      <tr><td>Sign in with Apple token</td><td>Until account deletion (we ask Apple to revoke it, then delete it)</td></tr>
       <tr><td>Backups</td><td>30 days (created daily; older ones are deleted automatically)</td></tr>
     </table>
     <p>Data is stored on Supabase (AWS) servers with industry-standard security measures.</p>
@@ -446,6 +447,7 @@ tr:nth-child(even) td { background: rgba(61,220,151,.03); }
     </ul>
     <div class="note">
       <p><strong>How to delete your account:</strong> You can delete it from <strong>Settings &gt; Account</strong> in the app. Deletion removes or anonymizes your account info, game data, SP balance, and posted content. However, information required for legal compliance, abuse prevention, billing records, etc. may be retained to the minimum extent for a limited period. Deleted data generally cannot be restored.</p>
+      <p>When you delete your account, we also ask Apple to revoke Strimo's Sign in with Apple authorization. To do this, we store on our server the token (refresh token) that Apple issues when you sign in. It is used only for revocation and cannot be read from the app. If revocation fails, you can remove Strimo yourself in iPhone <strong>Settings &gt; Apple Account &gt; Sign-In &amp; Security &gt; Sign in with Apple</strong>.</p>
     </div>
   </section>
 
